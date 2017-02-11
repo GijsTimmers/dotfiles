@@ -1,0 +1,6 @@
+## Blacklist everything...
+/*
+
+## except...
+!.gitignore
+!.vimrc

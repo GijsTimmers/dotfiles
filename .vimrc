@@ -18,6 +18,11 @@ set expandtab
 " jk kan gebruikt worden ipv Escape in INSERT-modus
 inoremap jk <Esc>
 
+" Snel naar normale modus na indrukken van Escape
+" Gebruik dit icm:
+" dconf write "/org/gnome/desktop/input-sources/xkb-options" "['caps:swapescape']"
+inoremap <Esc> <Esc>
+
 " Plakken vanuit het X11-klembord op een schone manier (vereist vim-gtk).
 vnoremap <C-c> "+y:echo "Gekopieerd naar systeemklembord"<CR>
 inoremap <C-v> <Esc>"+p:echo "Geplakt uit systeemklembord"<CR>a
