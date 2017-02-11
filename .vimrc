@@ -20,7 +20,7 @@ inoremap jk <Esc>
 
 " Snel naar normale modus na indrukken van Escape
 " Gebruik dit icm:
-" dconf write "/org/gnome/desktop/input-sources/xkb-options" "['caps:swapescape']"
+" dconf write "/org/gnome/desktop/input-sources/xkb-options" "['caps:escape']"
 inoremap <Esc> <Esc>
 
 " Plakken vanuit het X11-klembord op een schone manier (vereist vim-gtk).
