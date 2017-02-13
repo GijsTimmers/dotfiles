@@ -4,3 +4,4 @@
 ## except...
 !.gitignore
 !.vimrc
+!.gvimrc

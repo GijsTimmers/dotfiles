@@ -15,13 +15,15 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 
-" jk kan gebruikt worden ipv Escape in INSERT-modus
-inoremap jk <Esc>
-
-" Snel naar normale modus na indrukken van Escape
+" Snel naar normale modus na indrukken van Caps Lock (geremapt naar Esc)
 " Gebruik dit icm:
 " dconf write "/org/gnome/desktop/input-sources/xkb-options" "['caps:escape']"
 inoremap <Esc> <Esc>
+
+" jk kan gebruikt worden ipv Escape in INSERT-modus
+" jk en kj tijdelijk uitschakelen om te wennen aan Caps Lock
+inoremap jk <Nop>
+inoremap kj <Nop>
 
 " Plakken vanuit het X11-klembord op een schone manier (vereist vim-gtk).
 vnoremap <C-c> "+y:echo "Gekopieerd naar systeemklembord"<CR>
