@@ -22,8 +22,8 @@ inoremap <Esc> <Esc>
 
 " jk kan gebruikt worden ipv Escape in INSERT-modus
 " jk en kj tijdelijk uitschakelen om te wennen aan Caps Lock
-inoremap jk <Nop>
-inoremap kj <Nop>
+"inoremap jk <Nop>
+"inoremap kj <Nop>
 
 " Plakken vanuit het X11-klembord op een schone manier (vereist vim-gtk).
 vnoremap <C-c> "+y:echo "Gekopieerd naar systeemklembord"<CR>
@@ -57,8 +57,8 @@ set number
 " nnoremap <C-n> :exec &number==&relativenumber? "se number!" : "se relativenumber!"<CR>
 
 " Sneltoets: ; gebruiken als :
-nnoremap ; :
-vnoremap ; :
+"nnoremap ; :
+"vnoremap ; :
 
 " Sneltoets: zoekopdracht herhalen met ' ipv ;
 noremap ' ;
@@ -111,7 +111,7 @@ nnoremap <C-u> <C-u>zz
 " Blokken code commenten
 function! Comment_Or_Uncomment()
     let hekjelijst = ["python", "sh", "zsh", "bash", "ruby", "conf", "fstab", "yaml"]
-    let slashlijst = ["c", "cpp", "java", "scala"]
+    let slashlijst = ["c", "cpp", "java", "javascript", "scala"]
     let quotedblocklijst= ["vim"]
     let percentlijst = ["tex"]
     if index(quotedblocklijst, &filetype)>=0
